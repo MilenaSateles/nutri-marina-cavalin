@@ -1,0 +1,347 @@
+/* Estilo geral */
+:root {
+    --cor01: #FFF7E5;
+    --cor02: #D39789;
+    --cor03: #A3695C;
+    --cor04: #402617;
+    --cor05: #A27267;
+    --cor06: #65524E;
+    --cor07: #FFFFFF;
+    --cor08: #FFFBF9;
+    --cor09: #E0A699;
+    --fonte01: 'Allura', cursive;
+    --fonte02: 'Inika', serif;
+    --fonte03: 'Manuale', serif;
+    --fonte04: 'KoHo', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor01);
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-family: var(--fonte03);
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 2px 1.5px var(--cor06);
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-contato button:hover {
+    transform: scale(1.05);
+}
+
+
+/* Estilo do cabeçalho */
+header {
+    padding: 40px 4%;
+
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a>img {
+    height: 60px;
+}
+
+header a {
+    text-decoration: none;
+    font-family: var(--fonte03);
+    color: var(--cor06);
+    font-weight: 400;
+    display: inline-block;
+}
+
+header a:hover {
+    font-weight: 600;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button {
+    background-color: var(--cor02);
+    color: var(--cor07);
+    font-weight: 400;
+}
+
+/* Estilo do topo do site */
+section.topo-do-site {
+    padding: 40px 4%;
+    background-image: linear-gradient(transparent, var(--cor02));
+    width: 100%;
+    height: 500px;
+
+}
+
+section.topo-do-site.flex {
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+
+.topo-do-site .txt-topo-site {
+    height: 300px;
+    margin-top: 100px;
+}
+
+.topo-do-site .txt-topo-site h1 {
+    font-family: var(--fonte02);
+    color: var(--cor04);
+    font-weight: 400;
+    font-size: 22px;
+    width: 400px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.topo-do-site .btn-contato button {
+    width: 350px;
+    background-color: var(--cor08);
+    color: var(--cor06);
+}
+
+.topo-do-site .img-topo-site img {
+    height: 400px;
+}
+
+/* Estilo das áreas de atuação */
+
+section.areas {
+    padding: 40px 4%;
+    background-image: linear-gradient(90deg, rgba(239,214,208,0.9) 0%, rgba(255,251,249,1) 50%, rgba(239,214,208,0.9) 100%);
+}
+
+.areas .flex {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section.areas .interface>h2 {
+    font-family: var(--fonte01);
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--cor04);
+}
+
+.areas .listagem-areas {
+    color: var(--cor04);
+    padding: 50px 50px 80px 50px;
+    max-width: 400px;
+}
+
+.areas .listagem-areas>img {
+    height: 90px;
+}
+
+.areas .listagem-areas>img:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.areas .listagem-areas .nome-area {
+    text-align: justify;
+    font-family: var(--fonte02);
+    font-weight: 400;
+    font-size: 17px;
+    margin: 15px 0;
+}
+
+/* Estilo dos diferenciais */
+section.diferenciais {
+    padding: 40px 4%;
+    background-image: radial-gradient(circle, rgba(255,254,251,1) 0%, rgba(255,254,251,1) 19%, rgba(255,247,229,1) 50%);
+}
+
+.diferenciais .flex {
+    display: block;
+    gap: 200px
+}
+
+.diferenciais .interface h2 {
+    font-family: var(--fonte02);
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--cor04);
+    padding-bottom: 20px;
+}
+
+.diferenciais .interface h2 span {
+    font-family: var(--fonte01);
+    font-size: 34px;
+}
+
+.diferenciais .flex {
+    width: 800px;
+    margin: auto;
+    
+}
+
+.diferenciais .flex > div {
+    font-family: var(--fonte04);
+    color: var(--cor05);
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+
+.diferenciais .diferencial-dir {
+    text-align: right;
+}
+
+.diferenciais .flex div p {
+    font-family: var(--fonte02);
+    color: var(--cor04);
+    font-weight: 400;
+    font-size: 17px;
+    text-align: justify;
+}
+
+/*Estilo do Sobre*/
+
+section.sobre {
+    padding: 40px 4%;
+    background-color: var(--cor08);
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.sobre .img-sobre img {
+    align-items: center;
+    height: 400px;
+    flex-basis: 45%;
+}
+
+.sobre .interface>h2 {
+    font-family: var(--fonte03);
+    font-weight: 400;
+    color: var(--cor06);
+    font-size: 22px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.sobre .txt-sobre>h3 {
+    font-family: var(--fonte01);
+    font-size: 36px;
+    font-weight: 400;
+    color: var(--cor06);
+}
+
+.sobre p {
+    font-family: var(--fonte02);
+    color: var(--cor04);
+    font-size: 17px;
+    width: 700px;
+    padding-bottom: 20px;
+    text-align: justify;
+    flex-basis: 45%;
+}
+
+.sobre .txt-sobre-2 ul li {
+    font-family: var(--fonte02);
+    color: var(--cor04);
+    font-size: 17px;
+    width: 700px;
+    text-align: justify;
+}
+
+.sobre .img-sobre-2 img {
+    align-items: center;
+    height: 350px;
+    flex-basis: 45%;
+    padding-left: 100px;
+}
+
+.sobre .interface .processo {
+    font-family: var(--fonte02);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--cor04);
+    padding: 30px 0;
+}
+
+.sobre .interface .processo span {
+    font-family: var(--fonte01);
+    font-size: 38px;
+}
+
+.sobre .interface .btn-contato button {
+    background-color: var(--cor02);
+    color: var(--cor07);
+    font-size: 20px;
+    font-weight: 400;
+    width: 450px;
+}
+
+/* Estilo do rodapé */
+footer {
+    padding: 40px 4%;
+}
+
+footer .flex {
+    flex-wrap: wrap;
+}
+footer .flex .contato {
+    flex-basis: 30%;
+}
+
+footer h2 {
+    font-family: var(--fonte03);
+    font-weight: 400;
+    font-size: 22px;
+    padding-bottom: 15px;
+}
+
+footer .contato .nome-contato {
+    font-family: var(--fonte04);
+    font-weight: 400;
+    color: var(--cor06);
+}
+
+footer .contato img {
+    height: 40px;
+}
+
+
