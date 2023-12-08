@@ -104,18 +104,18 @@ section.topo-do-site {
     background-image: linear-gradient(transparent, var(--cor02));
     width: 100%;
     height: 500px;
-
 }
 
 section.topo-do-site.flex {
     align-items: center;
     justify-content: center;
-    gap: 200px;
+    flex-wrap: wrap;
 }
 
 .topo-do-site .txt-topo-site {
     height: 300px;
     margin-top: 100px;
+    flex-basis: 45%;
 }
 
 .topo-do-site .txt-topo-site h1 {
@@ -136,13 +136,14 @@ section.topo-do-site.flex {
 
 .topo-do-site .img-topo-site img {
     height: 400px;
+    flex-basis: 45%;
 }
 
 /* Estilo das áreas de atuação */
 
 section.areas {
     padding: 40px 4%;
-    background-image: linear-gradient(90deg, rgba(239,214,208,0.9) 0%, rgba(255,251,249,1) 50%, rgba(239,214,208,0.9) 100%);
+    background-image: linear-gradient(90deg, rgba(239, 214, 208, 0.9) 0%, rgba(255, 251, 249, 1) 50%, rgba(239, 214, 208, 0.9) 100%);
 }
 
 .areas .flex {
@@ -184,12 +185,12 @@ section.areas .interface>h2 {
 /* Estilo dos diferenciais */
 section.diferenciais {
     padding: 40px 4%;
-    background-image: radial-gradient(circle, rgba(255,254,251,1) 0%, rgba(255,254,251,1) 19%, rgba(255,247,229,1) 50%);
+    background-image: radial-gradient(circle, rgba(255, 254, 251, 1) 0%, rgba(255, 254, 251, 1) 19%, rgba(255, 247, 229, 1) 50%);
 }
 
 .diferenciais .flex {
-    display: block;
-    gap: 200px
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .diferenciais .interface h2 {
@@ -206,30 +207,33 @@ section.diferenciais {
     font-size: 34px;
 }
 
-.diferenciais .flex {
+/* .diferenciais .flex {
     width: 800px;
     margin: auto;
-    
-}
 
-.diferenciais .flex > div {
+} */
+
+.diferenciais .flex>div {
+    width: 700px;
+    height: 300px;
+    background-color: var(--cor02);
     font-family: var(--fonte04);
     color: var(--cor05);
     font-weight: 400;
     padding-bottom: 50px;
+    border-radius: 10px;
+    flex-basis: 30%;
+    margin-bottom: 20px;
+    transition: 0.5 ease-in-out;
 }
 
-.diferenciais .diferencial-dir {
-    text-align: right;
-}
-
-.diferenciais .flex div p {
+/* .diferenciais .flex div p {
     font-family: var(--fonte02);
     color: var(--cor04);
     font-weight: 400;
     font-size: 17px;
     text-align: justify;
-}
+} */
 
 /*Estilo do Sobre*/
 
@@ -238,7 +242,7 @@ section.sobre {
     background-color: var(--cor08);
 }
 
-section.sobre .flex{
+section.sobre .flex {
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
@@ -323,6 +327,7 @@ footer {
 footer .flex {
     flex-wrap: wrap;
 }
+
 footer .flex .contato {
     flex-basis: 30%;
 }
@@ -343,5 +348,3 @@ footer .contato .nome-contato {
 footer .contato img {
     height: 40px;
 }
-
-
