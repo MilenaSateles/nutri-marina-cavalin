@@ -1,13 +1,19 @@
 /* Estilo do cabeçalho */
 header {
-    padding: 40px 4% 0px 4%;
-
+    padding: 30px 4%;
+    position: fixed;
+    width: 100%;
 }
 
 header>.interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+header.rolagem {
+    background-color: var(--cor01);
+    padding: 10px 4%;
 }
 
 header a>img {
