@@ -27,3 +27,7 @@ footer .contato .nome-contato {
 footer .contato img {
     height: 40px;
 }
+
+footer .contato img:hover {
+    transform: scale(1.09);
+}

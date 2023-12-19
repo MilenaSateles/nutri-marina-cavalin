@@ -4,6 +4,10 @@
 section.sobre {
     padding: 40px 4%;
     background-color: var(--cor08);
+    background-image: url(../img/background-sobre.png);
+    background-repeat: no-repeat;
+    background-size: 1900px;
+    background-position: center;
 }
 
 section.sobre .flex {
