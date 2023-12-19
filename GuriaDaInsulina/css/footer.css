@@ -1,0 +1,29 @@
+/* Estilo do rodapé */
+footer {
+    padding: 40px 4%;
+}
+
+footer .flex {
+    flex-wrap: wrap;
+}
+
+footer .flex .contato {
+    flex-basis: 30%;
+}
+
+footer h2 {
+    font-family: var(--fonte03);
+    font-weight: 400;
+    font-size: 22px;
+    padding-bottom: 15px;
+}
+
+footer .contato .nome-contato {
+    font-family: var(--fonte04);
+    font-weight: 400;
+    color: var(--cor06);
+}
+
+footer .contato img {
+    height: 40px;
+}

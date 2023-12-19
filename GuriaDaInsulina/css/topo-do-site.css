@@ -1,0 +1,44 @@
+/* Estilo do topo do site */
+section.topo-do-site {
+    padding: 20px 4% 40px 4%;
+    background-image: linear-gradient(transparent, var(--cor02));
+    width: 100%;
+    height: 580px;
+
+}
+
+section.topo-do-site .interface .flex {
+    height: 550px;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.topo-do-site .txt-topo-site {
+    height: 300px;
+    margin-top: 100px;
+}
+
+.topo-do-site .txt-topo-site h1 {
+    font-family: var(--fonte02);
+    color: var(--cor04);
+    font-weight: 400;
+    font-size: 22px;
+    width: 400px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+
+.topo-do-site .btn-contato {
+    padding-left: 40px;
+}
+
+.topo-do-site .btn-contato button {
+    width: 340px;
+    background-color: var(--cor08);
+    color: var(--cor06);
+}
+
+.topo-do-site .img-topo-site img {
+    height: 600px;
+}

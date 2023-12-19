@@ -1,0 +1,43 @@
+
+/* Estilo das áreas de atuação */
+
+section.areas {
+    padding: 40px 4%;
+    background-image: linear-gradient(90deg, rgba(239, 214, 208, 0.9) 0%, rgba(255, 251, 249, 1) 50%, rgba(239, 214, 208, 0.9) 100%);
+}
+
+.areas .flex {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section.areas .interface>h2 {
+    font-family: var(--fonte01);
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--cor04);
+}
+
+.areas .listagem-areas {
+    color: var(--cor04);
+    padding: 50px 50px 80px 50px;
+    max-width: 400px;
+}
+
+.areas .listagem-areas>img {
+    height: 90px;
+}
+
+.areas .listagem-areas>img:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.areas .listagem-areas .nome-area {
+    text-align: justify;
+    font-family: var(--fonte02);
+    font-weight: 400;
+    font-size: 17px;
+    margin: 15px 0;
+}

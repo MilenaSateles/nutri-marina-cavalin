@@ -1,0 +1,58 @@
+/* Estilo dos diferenciais */
+section.diferenciais {
+    padding: 40px 4%;
+    background-image: radial-gradient(circle, rgba(255, 254, 251, 1) 0%, rgba(255, 254, 251, 1) 19%, rgba(255, 247, 229, 1) 50%);
+}
+
+.diferenciais .flex {
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.diferencial:hover {
+    transform: scale(1.02);
+    transition: 0.2s;
+} 
+
+.diferenciais .interface h2 {
+    font-family: var(--fonte02);
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--cor04);
+    padding-bottom: 20px;
+}
+
+.diferenciais .interface h2 span {
+    font-family: var(--fonte01);
+    font-size: 34px;
+}
+
+
+.diferenciais .flex>div {
+    width: 700px;
+    height: 300px;
+    background-image: linear-gradient(var(--cor02), transparent);
+    font-family: var(--fonte04);
+    color: var(--cor04);
+    font-weight: 400;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    flex-basis: 30%;
+    margin-bottom: 20px;
+    transition: 0.5 ease-in-out;
+    text-align: center;
+}
+
+.diferenciais .flex div h3 {
+    padding: 50px 10px 20px 10px;
+}
+
+.diferenciais .flex div p {
+    font-family: var(--fonte02);
+    color: var(--cor04);
+    font-weight: 400;
+    font-size: 17px;
+    text-align: justify;
+    padding: 10px 20px 0 20px;
+}

@@ -1,0 +1,44 @@
+/* Estilo do cabeçalho */
+header {
+    padding: 40px 4% 0px 4%;
+
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a>img {
+    height: 60px;
+}
+
+header a {
+    text-decoration: none;
+    font-family: var(--fonte03);
+    color: var(--cor06);
+    font-weight: 400;
+    display: inline-block;
+}
+
+header a:hover {
+    font-weight: 600;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button {
+    background-color: var(--cor02);
+    color: var(--cor07);
+    font-weight: 400;
+}
