@@ -21,8 +21,8 @@ section.topo-do-site .interface .flex {
     font-family: var(--fonte02);
     color: var(--cor04);
     font-weight: 400;
-    font-size: 22px;
-    width: 400px;
+    font-size: 24px;
+    width: 450px;
     line-height: 40px;
     margin-bottom: 20px;
     padding-left: 40px;
@@ -33,9 +33,10 @@ section.topo-do-site .interface .flex {
 }
 
 .topo-do-site .btn-contato button {
-    width: 340px;
+    width: 360px;
     background-color: var(--cor08);
     color: var(--cor06);
+    font-size: 18px;
 }
 
 .topo-do-site .img-topo-site img {
